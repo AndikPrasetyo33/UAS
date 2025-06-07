@@ -1,0 +1,378 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /*Menghilangkan jarak luar (luar elemen)*/
+    padding: 0;/*Menghilangkan jarak dalam (antara konten dan tepi elemen) */
+}
+
+header {
+    background: #2c3e50;
+    padding: 10px; /*Memberi jarak dalam (padding) sebesar 10 piksel di semua sisi */
+}
+/*ide*/
+.menu {
+  list-style: none;/*Menghapus bullet (tanda titik) bawaan dari <ul>*/
+  display: flex;/*Mengubah daftar jadi baris horizontal (sejajar ke samping)*/
+  gap: 50px;/*Memberi jarak 50px antar item menu */
+  padding: 0;/*Menghilangkan padding default*/
+  margin: 0;/*Menghilangkan padding default*/
+  justify-content: center;/* Memposisikan semua item menu ke tengah secara horizontal*/
+}  
+nav ul {
+  display: flex;/* Menyusun elemen <li> di dalam <ul> secara horizontal (baris) */
+  list-style: none;/*/* Menghilangkan bullet (tanda titik) default pada <ul> */
+  margin: 0;/* Menghapus margin bawaan dari <ul> */
+  padding: 0;/* Menghapus margin bawaan dari <ul> */
+}
+nav ul li {
+  position: relative;/* Menetapkan posisi relatif untuk elemen <li> */
+  margin-right: 25px;/* Memberikan jarak sebesar 25px di sebelah kanan elemen <li> */
+}
+
+nav ul li a {
+  color: white;/**/
+  text-decoration: none;/* Menghapus garis bawah (underline) pada teks */
+  padding: 8px;/* Memberikan ruang di dalam elemen <a>, yaitu 8px di semua sisi */
+  display: block;/* Mengubah elemen <a> menjadi elemen blok, sehingga dapat menerima padding dan mengambil seluruh lebar elemen induknya */
+}
+
+nav ul .dropdown {
+  display: none;             /* Secara default, dropdown tidak ditampilkan */
+  position: absolute;        /* Menempatkan dropdown secara absolut relatif terhadap elemen induknya */
+  top: 30px;                 /* Menempatkan dropdown 30px dari bagian atas elemen induknya */
+  left: 0;                   /* Menempatkan dropdown pada posisi paling kiri elemen induknya */
+  background: #34495e;       /* Memberikan latar belakang berwarna #34495e (abu-abu kebiruan) pada dropdown */
+  list-style: none;          /* Menghapus tanda bullet atau angka di setiap elemen daftar */
+  padding: 0;                /* Menghapus padding default di dalam dropdown */
+}
+
+nav ul li:hover .dropdown {
+  display: block;/* Menampilkan dropdown saat item menu di-hover */
+}
+/**/
+.dropdown a {
+  padding: 12px 16px;  /* Memberikan ruang di dalam link */
+  color: white;  /* Mengatur warna teks menjadi putih */
+  text-decoration: none;  /* Menghapus garis bawah pada teks */
+  display: block;  /* Mengubah link menjadi elemen blok, sehingga memenuhi lebar induknya */
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.2s ease;  /* Menambahkan efek transisi untuk perubahan warna latar belakang, transformasi, dan warna teks */
+  width: 90%;  /* Mengatur lebar elemen link menjadi 90% dari lebar elemen induknya */
+}
+.dropdown a:hover {
+  background-color: #666;  /* Mengubah latar belakang menjadi abu-abu gelap saat link di-hover */
+  transform: translateX(8px);  /* Menggeser elemen link ke kanan sebesar 8px saat di-hover */
+  color: #ffcc70;  /* Mengubah warna teks menjadi kuning keemasan saat link di-hover */
+}
+/**/
+.menu a {
+  display: block;  /* Menjadikan elemen <a> sebagai blok, agar bisa menerima padding dan memiliki lebar penuh */
+  color: white;  /* Mengatur warna teks menjadi putih */
+  text-decoration: none;  /* Menghapus garis bawah default dari link */
+  padding: 14px 20px;  /* Memberikan jarak dalam elemen link: 14px di atas dan bawah, 20px di kiri dan kanan */
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.2s ease;  /* Menambahkan transisi untuk perubahan background, transformasi, dan warna selama 0.3 detik untuk background dan 0.2 detik untuk transformasi dan warna */
+}
+
+
+.menu a:hover {
+  background-color: #575757;  /* Mengubah warna latar belakang saat elemen <a> di-hover */
+  transform: translateY(-2px);  /* Menggeser elemen <a> sedikit ke atas */
+  color: #ffcc70;  /* Mengubah warna teks saat elemen <a> di-hover */
+}
+
+
+/*efek header*/
+
+/*tengeran*/
+main {
+    display: flex;
+    align-items: center; /* supaya teks dan gambar sejajar di tengah secara vertikal */
+    gap: 20px; /* jarak antara gambar dan teks */
+    padding: 20px;
+    background-color: gray;
+}
+
+main img {
+    width: 200px; /* atur ukuran gambar */
+    height: 200px;
+    border-radius: 50%; /* opsional: biar sudut gambar jadi melengkung */
+}
+
+main h3 {
+    font-size: 20px; /* atur ukuran font */
+    margin: 0; /* hilangkan margin bawaan */
+}
+  /*section*/
+.bio{
+    background-color: rgb(215, 210, 210);
+  }
+  h1{
+    text-align: center;
+  }
+  div{
+    display: flex;
+    align-items: center; /* supaya teks dan gambar sejajar di tengah secara vertikal */
+    gap: 20px; /* jarak antara gambar dan teks */
+    padding: 20px;
+  }
+  section  div p{
+    font-size: 20px; /* atur ukuran font */
+    margin: 0; /* hilangkan margin bawaan */
+  }
+  section div img{
+    width: 200px; /* atur ukuran gambar */
+    height: 200px;
+    border-radius: 50%; /* opsional: biar sudut gambar jadi melengkung */
+  }
+  /*tab*/
+.pri {
+    background-color: grey;
+}
+table {
+    width: 100%;  /* Mengatur lebar tabel agar 100% dari lebar elemen induknya */
+    border-collapse: collapse;  /* Menghilangkan jarak antara batas sel pada tabel */
+    margin-top: 10px;  /* Memberikan jarak 10px pada bagian atas tabel */
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+/*opini card*/
+.msn{
+    background-color: rgb(215, 210, 210);
+}
+.berita {
+    display: flex;  /* Menggunakan model flexbox untuk tata letak */
+    flex-wrap: wrap;  /* Membuat elemen di dalam .berita dapat berpindah ke baris baru jika ruang tidak cukup */
+    gap: 20px;  /* Memberikan jarak 20px antar elemen di dalam .berita */
+    padding: 40px;  /* Memberikan padding (ruang dalam) sebesar 40px di seluruh sisi */
+    justify-content: center;  /* Menyusun elemen-elemen secara horizontal di tengah kontainer */
+}
+
+.card {
+    width: 25%;  /* Mengatur lebar elemen card menjadi 25% dari lebar kontainer */
+    min-width: 250px; /* Menetapkan lebar minimum 250px, agar card tetap terlihat baik di layar kecil */
+    text-align: center;  /* Menyusun teks di dalam card agar berada di tengah */
+    text-decoration: none;  /* Menghapus garis bawah (default) pada tautan (link) di dalam card */
+    color: black;  /* Menetapkan warna teks menjadi hitam */
+    background-color: white;  /* Menetapkan latar belakang card menjadi putih */
+    border-radius: 10px;  /* Memberikan efek sudut melengkung dengan radius 10px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Menambahkan bayangan lembut di bawah card */
+    padding: 20px;  /* Memberikan ruang dalam (padding) 20px di sekitar konten card */
+    transition: transform 0.2s ease-in-out;  /* Menambahkan efek transisi untuk transformasi, seperti saat card di-hover */
+}
+  
+  .card:hover {
+    transform: scale(1.03);/*memberikan efek sedikit membesar ketika gambar ditekan*/
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;/* gambar akan menyesuaikan kontainer*/
+    border-radius: 10px;/**/
+  }
+  
+  .card p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;/*mengatur ketebalan*/
+  }
+/*hubungi saya*/
+.kontak-container {
+  display: flex;
+  flex-wrap: wrap;/*agar lebih fleksibel*/
+  justify-content: space-around;/*memberikan jarak yang sama antara elemen dan di sekitar elemen */
+  padding: 40px;
+  gap: 40px;
+  background-color: grey;
+}
+
+.form-kontak {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);/**/
+}
+
+.form-kontak h2 {
+  margin-bottom: 20px;/**/
+}
+
+.form-kontak label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;/**/
+}
+
+.form-kontak input,
+.form-kontak textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;/**/
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-kontak button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;/**/
+}
+
+.form-kontak button:hover {
+  background-color: #1a242f;
+}
+
+.lokasi {
+  max-width: 500px;
+  flex-direction: column;/*agar tulisan lokasi diatas maps*/
+}
+
+.lokasi h2 {
+  margin-bottom: 15px;/**/
+}
+/*footer*/
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}
+
+/* --- CSS Asli Tetap --- */
+/* kode CSS tetap seperti yang sudah kamu tulis tadi */
+/* --- Tambahan Responsif --- */
+
+/* Ukuran tablet ke bawah (≤ 768px) */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main img {
+    width: 150px;
+    height: 150px;
+  }
+
+  div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section div img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .berita {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .kontak-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-kontak,
+  .lokasi {
+    width: 90%;
+  }
+}
+
+/* Ukuran mobile kecil (≤ 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 5px;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  main h3,
+  section div p {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .form-kontak h2,
+  .lokasi h2 {
+    font-size: 20px;
+  }
+
+  .form-kontak input,
+  .form-kontak textarea {
+    padding: 8px;
+  }
+
+  .form-kontak button {
+    width: 100%;
+  }
+}
+/*tombol tambah*/
+.btn {
+    padding: 6px 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 2px;
+    display: inline-block;
+}
+
+.tambah {
+    background-color: #28a745; /* hijau */
+}
+
+.edit {
+    background-color: #007bff; /* biru */
+}
+
+.hapus {
+    background-color: #dc3545; /* merah */
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
